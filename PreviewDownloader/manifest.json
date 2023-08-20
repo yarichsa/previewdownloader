@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Preview Downloader",
+    "version": "1.0",
+    "description": "Ultra lightweight YouTube preview downloader",
+    "icons": {
+        "128": "128.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+      },
+    "content_scripts": [
+        {
+            "matches": [ "<all_urls>" ],
+            "js": [ "app.js" ]
+        }
+    ]
+ }
